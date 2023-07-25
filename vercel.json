@@ -1,0 +1,16 @@
+{
+  "routes": [
+    { 
+     "src": "/[^.]+", 
+     "dest": "/", 
+     "status": 200 
+    },
+    {
+      "src": "/movie/:id",
+      "status": 301,
+      "headers": {
+        "Location": "/movie/:id"
+      }
+    }
+            ]
+}
